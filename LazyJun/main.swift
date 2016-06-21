@@ -16,8 +16,8 @@ generateSize(iconSizes)
     ==> run(fromPath)
 
 
-//rename(.SubSuffix, string: "@3x")
-//    >|< generate2x()
-//    >|< even()
-//    >|< rename(.AppendSuffix, string: "@2x")
-//    => run(fromPath)
+rename(.SubSuffix, string: "@3x")
+    >|< generate2x()
+    >|< even()
+    >|< rename(.AppendSuffix, string: "@2x")
+    => run(fromPath)
