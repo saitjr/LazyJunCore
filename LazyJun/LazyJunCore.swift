@@ -1,5 +1,5 @@
 //
-//  STLazyJunCore.swift
+//  LazyJunCore.swift
 //  
 //
 //  Created by TangJR on 4/25/16.
