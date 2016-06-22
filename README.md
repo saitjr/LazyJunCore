@@ -4,15 +4,17 @@ LazyJunCore is an image tool box in Swift that lets users combine each tool to a
 
 ## Features
 
-[x] rename (rename image)
+- [x] rename (rename image)
 
-[x] even (guarantee that image size is even number)
 
-[] compress (optimize image)
+- [x] even (guarantee that image size is even number)
 
-[x] generate2x (generate 2x image)
+-   [] compress (optimize image)
 
-[x] generateSize (generate sizes which are given)
+- [x] generate2x (generate 2x image)
+
+
+- [x] generateSize (generate sizes which are given)
 
 ## Usage
 
