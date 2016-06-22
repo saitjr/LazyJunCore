@@ -103,7 +103,7 @@ func run(fromPath: String) -> [FilePathInfo] {
     return imageFilePaths
 }
 
-func conver() -> PathInfoToImageHandler {
+func convert() -> PathInfoToImageHandler {
     return { pathInfo in
         let fullPath = pathInfo.fullPath
         guard var image = STImage(named: fullPath) else {
@@ -200,7 +200,7 @@ infix operator => {associativity left}
 func =>(lhs: Handler, rhs: [FilePathInfo]) {
     let toPath = "/Users/tangjr/Desktop/" + Tool.currentDateToPath()
     for pathInfo in rhs {
-        guard let image = conver()(pathInfo) else {
+        guard let image = convert()(pathInfo) else {
             return
         }
         let handledImage = lhs(image)
@@ -212,7 +212,7 @@ infix operator ==> {associativity left}
 func ==>(lhs: MutiableImageHandler, rhs: [FilePathInfo]) {
     let toPath = NSSearchPathForDirectoriesInDomains(.DesktopDirectory, .UserDomainMask, true)[0] + Tool.currentDateToPath()
     for pathInfo in rhs {
-        guard let image = conver()(pathInfo) else {
+        guard let image = convert()(pathInfo) else {
             return
         }
         let handledImages = lhs(image)
