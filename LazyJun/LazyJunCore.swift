@@ -210,7 +210,7 @@ func =>(lhs: Handler, rhs: [FilePathInfo]) {
 
 infix operator ==> {associativity left}
 func ==>(lhs: MutiableImageHandler, rhs: [FilePathInfo]) {
-    let toPath = "/Users/tangjr/Desktop/" + Tool.currentDateToPath()
+    let toPath = NSSearchPathForDirectoriesInDomains(.DesktopDirectory, .UserDomainMask, true)[0] + Tool.currentDateToPath()
     for pathInfo in rhs {
         guard let image = conver()(pathInfo) else {
             return

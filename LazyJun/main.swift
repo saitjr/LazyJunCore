@@ -12,8 +12,8 @@ let fromPath = "/Users/tangjr/Desktop/中文"
 let iconSizes: [CGSize] = [CGSize(width: 10, height: 10),
                            CGSize(width: 20, height: 20)]
 
-generateSize(iconSizes)
-    ==> run(fromPath)
+//generateSize(iconSizes)
+//    ==> run(fromPath)
 
 
 rename(.SubSuffix, string: "@3x")
