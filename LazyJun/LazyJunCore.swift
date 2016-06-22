@@ -198,7 +198,7 @@ func >|<(lhs: Handler, rhs: Handler) -> Handler {
 
 infix operator => {associativity left}
 func =>(lhs: Handler, rhs: [FilePathInfo]) {
-    let toPath = "/Users/tangjr/Desktop/" + Tool.currentDateToPath()
+    let toPath = NSSearchPathForDirectoriesInDomains(.DesktopDirectory, .UserDomainMask, true)[0] + Tool.currentDateToPath()
     for pathInfo in rhs {
         guard let image = convert()(pathInfo) else {
             return
