@@ -54,7 +54,9 @@ struct STImage {
     
     var image: NSImage?
     var name: String = ""
-    
+}
+
+extension STImage {
     init?(named fullPath: String) {
         guard let pathInfo = FilePathInfo(fullPath: fullPath) else {
             return nil
